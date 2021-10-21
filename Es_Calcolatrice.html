@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> ES 3</title>
+    </head>
+        <body>
+        <h1> JS ES 3 </h1>
+        <h2> Calcolatrice</h2>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <table id="tab" style="border: 1px solid">
+        <thead>
+            <tr style="border: 1px solid;"></tr>
+            <td style="border: 1px solid;">N</td>
+        </thead>
+        <tbody></tbody>
+        </table>
+        </br>
+
+        Inserisci un numero: <input id="num" type="text"></input>
+        <button id="btn1">Aggiungi</button>
+        <script>
+        $("body").append($("<label id='lbl1'></label>"))
+        $("#btn1").click(function () {
+        $("tbody").append("<tr><td>" + $("#num").val() + "</td></tr>"); 
+    }) 
+        </script>
+    </body>
+</html>
