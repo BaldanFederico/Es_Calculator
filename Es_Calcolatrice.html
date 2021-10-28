@@ -1,27 +1,36 @@
 <html>
     <head>
-        <title> ES 3</title>
+        <title> JS  ES 3</title>
+        <style>
+            table,
+            td,
+            th {
+                border: 1px solid black;
+            }
+        </style>
     </head>
-        <body>
-        <h1> JS ES 3 </h1>
-        <h2> Calcolatrice</h2>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <table id="tab" style="border: 1px solid">
-        <thead>
-            <tr style="border: 1px solid;"></tr>
-            <td style="border: 1px solid;">N</td>
-        </thead>
-        <tbody></tbody>
+    <body>
+        <h1>JS ES 3</h1>
+        <h2>Es_Calculator</h2>
+
+        <div id="div1"></div>
+        <table id="table">
+            <tr>
+                <th>N1</th>
+                <th>mark</th>
+                <th>N2</th>
+                <th>result</th>
+            </tr>
         </table>
         </br>
+        <input type="number" id="num1" placeholder="first number" ></br></br>
+        <input type="number" id="num2" placeholder="second number" ></br></br>
+        <button id="btnplus">+</button>
+        <button id="btn-">-</button>
+        <button id="btnper">*</button>
+        <button id="btndiviso">/</button>
 
-        Inserisci un numero: <input id="num" type="text"></input>
-        <button id="btn1">Aggiungi</button>
-        <script>
-        $("body").append($("<label id='lbl1'></label>"))
-        $("#btn1").click(function () {
-        $("tbody").append("<tr><td>" + $("#num").val() + "</td></tr>"); 
-    }) 
-        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script text="text/javascript" src="EsFile3.js"></script>
     </body>
 </html>
