@@ -1,3 +1,8 @@
+//localStorage.setItem('table',"");
+//console.log("table:", localStorage.getItem("table"));
+$('#table').append(localStorage.getItem("table"));
+
+
 $("#btnplus").click(function(){
 calc ("+");
 });
@@ -35,7 +40,10 @@ case "/":
 }
 if(input1.val() && input2.val()){
  var string = 
-        "<tr><td>" + n1 + "</td><td style ='text-allign:center'>" + segno + "</td><td>" + n2 +"</td><td>"+ risultato +"</td></tr>";
+        "<tr><td>" + n1 + "</td><td style ='text-align:center'>" + segno + "</td><td>" + n2 +"</td><td>"+ risultato +"</td></tr>";
+        var table= localStorage.getItem("table");
+        localStorage.clear();
+        localStorage.setItem("table", table + string);
         $('#table').append(string);
         input1.val("");
         input2.val("");
